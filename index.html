@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="mainContainer">
+
+            <div class="gameInfoContainer"></div>
+
+            <div id="game" class="gameContainer">
+
+                <div id="character" class="protagonist"></div>
+
+                <div id="block" class="antagonist"></div>
+
+            </div>
+
+            <div class="controllerContainer">
+                <!-- <div class="up">
+                    <button onclick="jump()">Jump</button>
+                </div> -->
+
+                <button onclick="jump()" class="btn-class-name">
+                    <span class="back"></span>
+                    <span class="front"></span>
+                </button>
+                
+            </div>
+
+        </div>
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
