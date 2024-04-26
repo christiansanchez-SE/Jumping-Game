@@ -8,13 +8,18 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Game</title>
+        <link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
         <div class="mainContainer">
 
-            <div class="gameInfoContainer"></div>
+            <div class="gameInfoContainer">
+                <div class="score">
+                    <p>Player Score: <span id="playerScore" >0</span></p>
+                </div>
+            </div>
 
             <div id="game" class="gameContainer">
 
@@ -29,7 +34,7 @@
                     <button onclick="jump()">Jump</button>
                 </div> -->
 
-                <button onclick="jump()" class="btn-class-name">
+                <button onclick="jump()" id="jumpButton" class="btn-class-name">
                     <span class="back"></span>
                     <span class="front"></span>
                 </button>
