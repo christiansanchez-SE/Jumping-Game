@@ -21,7 +21,34 @@
     color: white;
     font-size: 5em;
     text-shadow: 2px 2px 5px red;
+    animation: neon-blink 5s infinite alternate;
 }
+
+@keyframes neon-blink {
+    44% {
+      opacity: 1;
+    }
+    
+    45% {
+      opacity: .7;
+    }
+    
+    46% {
+      opacity: 1;
+    }
+    
+    98% {
+      opacity: 1;
+    }
+    
+    99% {
+      opacity: .5;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
 
 /* - - - - Game Container - - - - - */
 .gameContainer{
@@ -91,7 +118,7 @@
 /* - - - - Game Info Container - - - - - */
 .gameInfoContainer{
     /* border: solid blue; */
-    background-color: rgb(103,179,181);
+    background-color: rgba(103, 178, 181, 0.897);
     width: 500px;
     height: 70px;
     /* margin-top: 1em; */
@@ -108,6 +135,8 @@
     font-size: 3em;
     word-spacing: 10px;
     letter-spacing: 3px;
+    animation: neon-blink 5s infinite alternate;
+    text-shadow: 2px 2px 5px white;
 }
 
 /* - - - - Controller Container - - - - - */
