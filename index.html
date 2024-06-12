@@ -1,60 +1,55 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Game</title>
-        <link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jumping Game</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.cdnfonts.com/css/arcade-classic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="mainContainer">
+      <div class="title">
+        <h1>Pokemon Jump!</h1>
+      </div>
 
-        <div class="mainContainer">
-
-            <div class="title">
-                <h1>Pokemon Jump!</h1>
-            </div>
-
-            <div class="gameInfoContainer">
-                <div class="score">
-                    <p>Player Score: <span id="playerScore" >0</span></p>
-                </div>
-            </div>
-
-            <div id="game" class="gameContainer">
-
-                <div id="character" class="protagonist"></div>
-
-                <div id="block" class="antagonist"></div>
-
-            </div>
-
-            <div class="bottomContainer">
-
-                <div class="controllerContainer">
-    
-                    <button onclick="jump()" id="jumpButton" class="btn-class-name">
-                        <span class="back"></span>
-                        <span class="front"></span>
-                    </button>
-    
-                    
-                </div>
-
-                
-            </div>
-            
-            <div class="creator">
-                <p>By: Christian Sanchez</p>
-            </div>
-            
-
+      <!-- Game Info Container -->
+      <div class="gameInfoContainer">
+        <div class="score">
+          <p>Player Score: <span id="playerScore">0</span></p>
         </div>
-        
-        <script src="app.js" async defer></script>
-    </body>
+      </div>
+
+      <!--  Game Container -->
+      <div id="game" class="gameContainer">
+        <div id="character" class="protagonist"></div>
+
+        <div id="block" class="antagonist"></div>
+      </div>
+
+      <!-- Controller Container -->
+      <div class="bottomContainer">
+        <div class="controllerContainer">
+          <button onclick="jump()" id="jumpButton" class="btn-class-name">
+            <span class="back"></span>
+            <span class="front"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Credit Container -->
+      <div class="creator">
+        <p>By: Christian Sanchez</p>
+      </div>
+    </div>
+
+    <script src="app.js" async defer></script>
+  </body>
 </html>
